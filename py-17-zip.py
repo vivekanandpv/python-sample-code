@@ -11,3 +11,8 @@ with zipfile.ZipFile(file_path) as file_handle:
 
     file_handle.extractall(extract_path)
     print('Completed!')
+
+
+# Also possible for individual file adding
+# with zipfile.ZipFile('sample2.zip', 'w') as zip_handle_2:
+#    zip_handle_2.write('filename.text')
